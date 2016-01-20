@@ -11,7 +11,8 @@
 
 @protocol PictureViewCellDelegate <NSObject>
 
-//-(void)pictureViewCell:(id)cell didTapCell:(
+
+
 
 @end
 

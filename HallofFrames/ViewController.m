@@ -8,27 +8,52 @@
 
 #import "ViewController.h"
 #import "Picture.h"
+#import "PictureCollectionViewCell.h"
 
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
+@property NSArray *pictures;
+@property Picture *picture1;
+@property Picture *picture2;
+@property Picture *picture3;
+@property Picture *picture4;
+@property Picture *picture5;
 
 
 @end
 
 @implementation ViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *pictures = [NSArray arrayWithObjects: count:<#(NSUInteger)#>]
+    self.picture1 = [[Picture alloc] init];
+    self.picture2 = [[Picture alloc] init];
+    self.picture3 = [[Picture alloc] init];
+    self.picture4 = [[Picture alloc] init];
+    self.picture5 = [[Picture alloc] init];
+    
+    self.picture1.image = [UIImage imageNamed:@"1"];
+    self.picture1.image = [UIImage imageNamed:@"2"];
+    self.picture1.image = [UIImage imageNamed:@"3"];
+    self.picture1.image = [UIImage imageNamed:@"4"];
+    self.picture1.image = [UIImage imageNamed:@"5"];
+    
+    
+    self.pictures = [NSArray arrayWithObjects:self.picture1, self.picture2, self.picture3, self.picture4, self.picture5, nil];
 }
+
+
+
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 5;
+    return self.pictures.count;
 }
 
--(UICollectionViewCell * ) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:indexPath];
+-(UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:indexPath.row];
+    
+    
+    
 }
 
 
