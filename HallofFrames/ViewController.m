@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Picture.h"
 
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
-//@property NSArray *pictureArray;
+
+
 @end
 
 @implementation ViewController
@@ -18,11 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSMutableArray *pictureArray = [[NSMutableArray alloc] init];
-    [pictureArray addObject:1, 2, 3, 4, 5];
-    
-    
-    
+    NSArray *pictures = [NSArray arrayWithObjects: count:<#(NSUInteger)#>]
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -30,7 +28,7 @@
 }
 
 -(UICollectionViewCell * ) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID5" forIndexPath:indexPath];
+    return [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:indexPath];
 }
 
 

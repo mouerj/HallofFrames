@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol PictureViewCellDelegate <NSObject>
 
-//-(void)pictureViewCell:(id)cell didTapCell:(U
+//-(void)pictureViewCell:(id)cell didTapCell:(
 
 @end
 
 @interface Picture : NSObject
-
+@property UIImage *image;
+@property UIColor *frameColor;
 @end
