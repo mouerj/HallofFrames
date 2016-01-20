@@ -9,13 +9,20 @@
 #import "ViewController.h"
 
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
-
+//@property NSArray *pictureArray;
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSMutableArray *pictureArray = [[NSMutableArray alloc] init];
+    [pictureArray addObject:1, 2, 3, 4, 5];
+    
+    
+    
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -23,9 +30,7 @@
 }
 
 -(UICollectionViewCell * ) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        <#statements#>
-    }
+    return [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID5" forIndexPath:indexPath];
 }
 
 

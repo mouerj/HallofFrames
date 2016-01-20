@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -27,213 +26,143 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rbe-5L-RL8">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellID1" id="rbe-5L-RL8">
+                                        <rect key="frame" x="46" y="0.0" width="300" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-0R-FYz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3np-9l-j4d">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <state key="normal" image="1"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="-19" y="62" width="338" height="177"/>
+                                                    </variation>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailingMargin" secondItem="Vfg-0R-FYz" secondAttribute="trailing" constant="17" id="4M8-sA-x0S"/>
-                                            <constraint firstItem="Vfg-0R-FYz" firstAttribute="leading" secondItem="rbe-5L-RL8" secondAttribute="leadingMargin" constant="17" id="WX4-9S-kct"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="Vfg-0R-FYz" secondAttribute="bottom" constant="7" id="j9R-gc-Uld"/>
-                                            <constraint firstItem="Vfg-0R-FYz" firstAttribute="top" secondItem="rbe-5L-RL8" secondAttribute="topMargin" constant="7" id="vug-Y3-N2q"/>
-                                        </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
-                                                <exclude reference="Vfg-0R-FYz"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="4M8-sA-x0S"/>
-                                                <exclude reference="WX4-9S-kct"/>
-                                                <exclude reference="j9R-gc-Uld"/>
-                                                <exclude reference="vug-Y3-N2q"/>
+                                                <exclude reference="3np-9l-j4d"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="subviews">
-                                                <include reference="Vfg-0R-FYz"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="4M8-sA-x0S"/>
-                                                <include reference="WX4-9S-kct"/>
-                                                <include reference="j9R-gc-Uld"/>
-                                                <include reference="vug-Y3-N2q"/>
+                                                <include reference="3np-9l-j4d"/>
                                             </mask>
                                         </variation>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4wt-Pq-JbW">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellID2" id="nb7-LV-ZfA">
+                                        <rect key="frame" x="46" y="620" width="300" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XSi-9W-nAh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22V-ua-07c">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <state key="normal" image="3"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="-6" y="53" width="313" height="194"/>
+                                                    </variation>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <constraints>
-                                            <constraint firstAttribute="bottomMargin" secondItem="XSi-9W-nAh" secondAttribute="bottom" constant="7" id="0Nd-1e-40W"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="XSi-9W-nAh" secondAttribute="trailing" constant="17" id="51f-4R-MHG"/>
-                                            <constraint firstItem="XSi-9W-nAh" firstAttribute="leading" secondItem="4wt-Pq-JbW" secondAttribute="leadingMargin" constant="17" id="6cx-W2-XAL"/>
-                                            <constraint firstItem="XSi-9W-nAh" firstAttribute="top" secondItem="4wt-Pq-JbW" secondAttribute="topMargin" constant="7" id="9W4-Vm-h8m"/>
-                                        </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
-                                                <exclude reference="XSi-9W-nAh"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="0Nd-1e-40W"/>
-                                                <exclude reference="51f-4R-MHG"/>
-                                                <exclude reference="6cx-W2-XAL"/>
-                                                <exclude reference="9W4-Vm-h8m"/>
+                                                <exclude reference="22V-ua-07c"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="subviews">
-                                                <include reference="XSi-9W-nAh"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="0Nd-1e-40W"/>
-                                                <include reference="51f-4R-MHG"/>
-                                                <include reference="6cx-W2-XAL"/>
-                                                <include reference="9W4-Vm-h8m"/>
+                                                <include reference="22V-ua-07c"/>
                                             </mask>
                                         </variation>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nb7-LV-ZfA">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellID3" id="RDK-qu-RcB">
+                                        <rect key="frame" x="46" y="930" width="300" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PW3-FY-Wbc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-gm-znS">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <state key="normal" image="4"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="-19" y="61" width="338" height="177"/>
+                                                    </variation>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailingMargin" secondItem="PW3-FY-Wbc" secondAttribute="trailing" constant="17" id="58B-PG-5ks"/>
-                                            <constraint firstItem="PW3-FY-Wbc" firstAttribute="leading" secondItem="nb7-LV-ZfA" secondAttribute="leadingMargin" constant="17" id="Iej-1Y-VRv"/>
-                                            <constraint firstItem="PW3-FY-Wbc" firstAttribute="top" secondItem="nb7-LV-ZfA" secondAttribute="topMargin" constant="7" id="MvG-mo-AcD"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="PW3-FY-Wbc" secondAttribute="bottom" constant="7" id="c0E-9a-OPw"/>
-                                        </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
-                                                <exclude reference="PW3-FY-Wbc"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="58B-PG-5ks"/>
-                                                <exclude reference="Iej-1Y-VRv"/>
-                                                <exclude reference="MvG-mo-AcD"/>
-                                                <exclude reference="c0E-9a-OPw"/>
+                                                <exclude reference="6UC-gm-znS"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="subviews">
-                                                <include reference="PW3-FY-Wbc"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="58B-PG-5ks"/>
-                                                <include reference="Iej-1Y-VRv"/>
-                                                <include reference="MvG-mo-AcD"/>
-                                                <include reference="c0E-9a-OPw"/>
+                                                <include reference="6UC-gm-znS"/>
                                             </mask>
                                         </variation>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RDK-qu-RcB">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellID4" id="k9Y-ik-FSf">
+                                        <rect key="frame" x="46" y="1240" width="300" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S0f-CK-HCi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTX-An-DSY">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <state key="normal" image="5"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="-27" y="94" width="354" height="168"/>
+                                                    </variation>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="S0f-CK-HCi" firstAttribute="leading" secondItem="RDK-qu-RcB" secondAttribute="leadingMargin" constant="17" id="64y-QC-Qoa"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="S0f-CK-HCi" secondAttribute="bottom" constant="7" id="ev6-0c-MSN"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="S0f-CK-HCi" secondAttribute="trailing" constant="17" id="lAX-hY-3Nz"/>
-                                            <constraint firstItem="S0f-CK-HCi" firstAttribute="top" secondItem="RDK-qu-RcB" secondAttribute="topMargin" constant="7" id="vCq-6v-nRp"/>
-                                        </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
-                                                <exclude reference="S0f-CK-HCi"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="64y-QC-Qoa"/>
-                                                <exclude reference="ev6-0c-MSN"/>
-                                                <exclude reference="lAX-hY-3Nz"/>
-                                                <exclude reference="vCq-6v-nRp"/>
+                                                <exclude reference="VTX-An-DSY"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="subviews">
-                                                <include reference="S0f-CK-HCi"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="64y-QC-Qoa"/>
-                                                <include reference="ev6-0c-MSN"/>
-                                                <include reference="lAX-hY-3Nz"/>
-                                                <include reference="vCq-6v-nRp"/>
+                                                <include reference="VTX-An-DSY"/>
                                             </mask>
                                         </variation>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="k9Y-ik-FSf">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellID5" id="pCF-lq-rPQ">
+                                        <rect key="frame" x="46" y="1240" width="300" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yj0-KM-hJX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXf-yY-3Fr">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <state key="normal" image="2"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="-27" y="94" width="354" height="168"/>
+                                                    </variation>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="yj0-KM-hJX" firstAttribute="top" secondItem="k9Y-ik-FSf" secondAttribute="topMargin" constant="7" id="Jhp-Of-AWH"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="yj0-KM-hJX" secondAttribute="bottom" constant="7" id="KKP-kR-ASH"/>
-                                            <constraint firstItem="yj0-KM-hJX" firstAttribute="leading" secondItem="k9Y-ik-FSf" secondAttribute="leadingMargin" constant="17" id="Wn8-Ch-IHO"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="yj0-KM-hJX" secondAttribute="trailing" constant="17" id="qrx-Az-119"/>
-                                        </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
-                                                <exclude reference="yj0-KM-hJX"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="Jhp-Of-AWH"/>
-                                                <exclude reference="KKP-kR-ASH"/>
-                                                <exclude reference="Wn8-Ch-IHO"/>
-                                                <exclude reference="qrx-Az-119"/>
+                                                <exclude reference="MXf-yY-3Fr"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
                                             <mask key="subviews">
-                                                <include reference="yj0-KM-hJX"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="Jhp-Of-AWH"/>
-                                                <include reference="KKP-kR-ASH"/>
-                                                <include reference="Wn8-Ch-IHO"/>
-                                                <include reference="qrx-Az-119"/>
+                                                <include reference="MXf-yY-3Fr"/>
                                             </mask>
                                         </variation>
                                     </collectionViewCell>
@@ -255,4 +184,11 @@
             <point key="canvasLocation" x="244.5" y="314"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="284" height="177"/>
+        <image name="2" width="300" height="168"/>
+        <image name="3" width="259" height="194"/>
+        <image name="4" width="284" height="177"/>
+        <image name="5" width="300" height="168"/>
+    </resources>
 </document>
