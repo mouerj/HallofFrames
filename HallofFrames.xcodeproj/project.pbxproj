@@ -13,6 +13,7 @@
 		DFAD9E181C501F0600611FFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD9E161C501F0600611FFF /* Main.storyboard */; };
 		DFAD9E1A1C501F0600611FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAD9E191C501F0600611FFF /* Assets.xcassets */; };
 		DFAD9E1D1C501F0600611FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAD9E1B1C501F0600611FFF /* LaunchScreen.storyboard */; };
+		E54A92171C5023E1006C8E8D /* PictureCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54A92161C5023E1006C8E8D /* PictureCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		DFAD9E191C501F0600611FFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFAD9E1C1C501F0600611FFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFAD9E1E1C501F0600611FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54A92151C5023E1006C8E8D /* PictureCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewController.h; sourceTree = "<group>"; };
+		E54A92161C5023E1006C8E8D /* PictureCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				DFAD9E111C501F0600611FFF /* AppDelegate.m */,
 				DFAD9E131C501F0600611FFF /* ViewController.h */,
 				DFAD9E141C501F0600611FFF /* ViewController.m */,
+				E54A92151C5023E1006C8E8D /* PictureCollectionViewController.h */,
+				E54A92161C5023E1006C8E8D /* PictureCollectionViewController.m */,
 				DFAD9E161C501F0600611FFF /* Main.storyboard */,
 				DFAD9E191C501F0600611FFF /* Assets.xcassets */,
 				DFAD9E1B1C501F0600611FFF /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFAD9E151C501F0600611FFF /* ViewController.m in Sources */,
+				E54A92171C5023E1006C8E8D /* PictureCollectionViewController.m in Sources */,
 				DFAD9E121C501F0600611FFF /* AppDelegate.m in Sources */,
 				DFAD9E0F1C501F0600611FFF /* main.m in Sources */,
 			);
@@ -298,6 +304,7 @@
 				DFAD9E231C501F0700611FFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
