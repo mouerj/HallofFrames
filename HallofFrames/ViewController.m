@@ -33,10 +33,10 @@
     self.picture5 = [[Picture alloc] init];
     
     self.picture1.image = [UIImage imageNamed:@"1"];
-    self.picture1.image = [UIImage imageNamed:@"2"];
-    self.picture1.image = [UIImage imageNamed:@"3"];
-    self.picture1.image = [UIImage imageNamed:@"4"];
-    self.picture1.image = [UIImage imageNamed:@"5"];
+    self.picture2.image = [UIImage imageNamed:@"2"];
+    self.picture3.image = [UIImage imageNamed:@"3"];
+    self.picture4.image = [UIImage imageNamed:@"4"];
+    self.picture5.image = [UIImage imageNamed:@"5"];
     
     
     self.pictures = [NSArray arrayWithObjects:self.picture1, self.picture2, self.picture3, self.picture4, self.picture5, nil];
@@ -50,12 +50,18 @@
 }
 
 -(UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellID" forIndexPath:indexPath.row];
-    
-    
-    
+    PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    Picture *picture = [self.pictures objectAtIndex:indexPath.row];
+    cell.imageView.image = picture.image;
+    return cell;
 }
 
 
 
+
+
+
+
+
 @end
+
